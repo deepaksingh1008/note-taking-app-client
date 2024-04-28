@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* register */
+.register {
+  width: 100%;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+form {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(182, 87, 87, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 20px;
+}
+form h2 {
+  font-size: 1.6rem;
+}
+form input {
+  padding: 5px;
+  margin: 10px;
+  width: 100%;
+  border-radius: 2px;
+}
+.fav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.btn button {
+  padding: 4px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: rgb(29, 178, 207);
+  border-radius: 15px;
+  cursor: pointer;
+}
+.btn button:hover {
+  background-color: green;
+  padding: 5px;
+}
+
+/* home */
+.home {
+  width: 100%;
+  height: 100vh;
+  background: #f2709c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff9472,
+    #f2709c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff9472,
+    #f2709c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content button {
+  padding: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 5px;
+  background-color: rgb(12, 108, 224);
+}
+.content button:hover {
+  padding: 7px;
+  background-color: rgb(70, 241, 70);
+  color: red;
+}
+
+/* add note */
+.add-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgb(251, 108, 6);
+  background: radial-gradient(
+    circle,
+    rgba(251, 108, 6, 0.9698004201680672) 0%,
+    rgba(255, 255, 255, 1) 46%,
+    rgba(46, 158, 63, 1) 100%
+  );
+  height: 100vh;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background: transparent;
+  border-radius: 10px;
+}
+.form input {
+  padding: 7px;
+}
+/* CSS */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+/*Table*/
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.record input {
+  padding: 7px;
+  width: 50%;
+  margin: 20px;
+}
+
+.search-btn {
+  padding: 7px 20px 7px 20px;
+}
+.search-btn:hover {
+  background-color: #0b78f6;
+  color: white;
+  padding: 7px 25px 7px 25px;
+}

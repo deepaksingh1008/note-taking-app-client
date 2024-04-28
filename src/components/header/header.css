@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  padding: 12px;
+  background: #70e1f5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffd194,
+    #70e1f5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffd194,
+    #70e1f5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: rgb(10, 11, 11);
+  position: sticky;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.logo {
+  margin: 5px;
+  padding: 2px;
+}
+.log a h4 {
+  color: aliceblue;
+}
+.nav {
+  display: flex;
+}
+
+.nav a li {
+  list-style: none;
+  margin: 5px;
+  color: rgb(141, 63, 63);
+  padding: 2px;
+  cursor: pointer;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
