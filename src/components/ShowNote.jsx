@@ -50,7 +50,7 @@ const ShowNote = () => {
     }
     async function fetchData() {
         try {
-            const { data } = await axios.get(`http://localhost:5000/api/v1/get-all-notes/${user1.id}`)
+            const { data } = await axios.get(`https://note-takin-app-restapi.vercel.app/api/v1/get-all-notes/${user1.id}`)
             if (data.success) {
 
                 dispatch(getNotes(data.notes));
