@@ -13,7 +13,7 @@ const Login = () => {
         e.preventDefault()
         const dataValue = { email, password }
 
-        const { data } = await axios.post('http://localhost:5000/api/v1/login', dataValue);
+        const { data } = await axios.post('https://note-takin-app-restapi.vercel.app/api/v1/login', dataValue);
         console.log(data);
         if (data.success) {
             dispatch(login({ userData: data.user, token: data.token }))

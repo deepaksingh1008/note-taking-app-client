@@ -20,7 +20,7 @@ const ShowNote = () => {
     const handleSearching = async (e) => {
         let search = e.target.value;
         if (search) {
-            const { data } = await axios.get(`http://localhost:5000/api/v1/notes/search/${user1.id}?title=${search}`);
+            const { data } = await axios.get(`https://note-takin-app-restapi.vercel.app/api/v1/notes/search/${user1.id}?title=${search}`);
             dispatch(getNotes(data.notes));
         }
         else {
@@ -29,7 +29,7 @@ const ShowNote = () => {
     }
     const handleDelete = async (id) => {
         try {
-            const { data } = await axios.delete(`http://localhost:5000/api/v1/delete-note/${id}`, {
+            const { data } = await axios.delete(`https://note-takin-app-restapi.vercel.app/api/v1/delete-note/${id}`, {
                 headers: {
                     Authorization: parsedToken,
                 }

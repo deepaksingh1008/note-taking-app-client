@@ -27,7 +27,7 @@ const EditNote = () => {
             color,
         }
         try {
-            const { data } = await axios.put(`http://localhost:5000/api/v1/update-note/${id}`, dataValue, { headers: { Authorization: parsedToken } })
+            const { data } = await axios.put(`https://note-takin-app-restapi.vercel.app/api/v1/update-note/${id}`, dataValue, { headers: { Authorization: parsedToken } })
             if (data.success) {
                 // console.log('hi')
 
@@ -48,7 +48,7 @@ const EditNote = () => {
     const fetchSingleData = async () => {
         try {
 
-            const { data } = await axios.get(`http://localhost:5000/api/v1/get-single-note/${id}`)
+            const { data } = await axios.get(`https://note-takin-app-restapi.vercel.app/api/v1/get-single-note/${id}`)
             console.log(data.singleNote);
             setContent(data.singleNote.content);
             setColor(data.singleNote.color);

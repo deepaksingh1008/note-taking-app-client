@@ -11,7 +11,7 @@ const Register = () => {
         e.preventDefault()
         const dataValue = { email, newPassword: password, answer }
         try {
-            const { data } = await axios.post('http://localhost:5000/api/v1/forgot-password', dataValue);
+            const { data } = await axios.post('https://note-takin-app-restapi.vercel.app/api/v1/forgot-password', dataValue);
             if (data.success) {
                 //  alert(data.message);
                 navigate('/login');

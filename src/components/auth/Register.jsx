@@ -10,7 +10,7 @@ const Register = () => {
     const handleOnclick = async (e) => {
         e.preventDefault()
         const dataValue = { name, email, password, answer }
-        const { data } = await axios.post('http://localhost:5000/api/v1/register', dataValue);
+        const { data } = await axios.post('https://note-takin-app-restapi.vercel.app/api/v1/register', dataValue);
         // console.log(data)
         if (data.success) {
             navigate('/login');
